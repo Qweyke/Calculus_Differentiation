@@ -57,7 +57,6 @@ while h >= 1e-15:  # пока шаг не станет с точностью н�
 ax1.plot(plotx, plotl, color='red', ls='--', marker='*', label='left')
 ax1.plot(plotx, plotr, color='blue', ls='-', marker='^', label='right')
 ax1.plot(plotx, plotc, color='green', ls='dotted', marker='8', label='central')
-ax1.plot(plotx, plotscnd, color='orange', ls='-', marker='o', label='second derivative')
 ax1.set_xscale('log')
 ax1.set_yscale('log')
 ax1.set_title('Left, right and central methode')
@@ -65,8 +64,6 @@ ax1.set_xlabel('x')
 ax1.set_ylabel('y')
 ax1.legend()
 ax1.grid(True)
-
-
 
 ax2.plot(plotx, plotscnd, color='orange', ls='-', marker='o', label='second derivative')
 ax2.set_title('Second derivative')
